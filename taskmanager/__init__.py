@@ -13,7 +13,6 @@ if os.environ.get("DEVELOPMENT") == "True":
 else:
     app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("DATABASE_URL")
 
-
 db = SQLAlchemy(app)
 
 from taskmanager import routes #noqa
