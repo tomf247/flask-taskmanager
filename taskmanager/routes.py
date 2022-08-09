@@ -56,7 +56,7 @@ def add_task():
         )
         db.session.add(task)
         db.session.commit()
-        return redirect(url_for("home"))
+        return redirect(url_for("categories"))
     return render_template("add_task.html", categories=categories)
 
 
